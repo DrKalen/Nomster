@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css?family=Baloo|Calligraffitti|Kalam|Oregano|Permanent+Marker');
+
 @import "bootstrap";
 
 .booyah-box {
@@ -25,4 +28,11 @@ body {
     background:image_url('txture.png');
     box-shadow: 04px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #E3E85A;
+    font-family: 'Oregano', cursive;
+    font-size: 30px;
+
 }
