@@ -32,7 +32,7 @@ body {
 .navbar-inverse .navbar-brand {
     color: #E3E85A;
     font-family: 'kalamregular';
-    font-size: 30px;
+    font-size: 22px;
 
 }
 
@@ -41,3 +41,10 @@ body {
     margin-left: 30px;
     color: blue;
 }
+
+a.nav-item {
+    color: blue;
+    opacity: 1.0;
+    font-family: 'kalamregular';
+}
+
