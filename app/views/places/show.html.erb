@@ -4,7 +4,13 @@
     <br /><br />
     <p><%= @place.description %></p>
 
-<% if @place.latitude.present? && @place.longitude.present? %>
+    <div>
+        <% @place.photos.each do |photo| %>
+            <%= photo.caption %>
+        <% end %>
+    </div>
+
+    <% if @place.latitude.present? && @place.longitude.present? %>
 
     <script>
 
@@ -28,6 +34,8 @@
     </script>
 
     <div id="map"></div>
+
+
 <% end %>
 
 <br />
@@ -95,3 +103,11 @@
           Add a Comment
         </button>
        </div>
+
+       <div class="clear"></div>
+       <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
+        <%= f.input :caption %>
+        <%= f.submit "Add My Photo", class: 'btn btn-primary' %>
+        <% end %>
+
+
