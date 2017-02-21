@@ -1,9 +1,45 @@
 <html>
-<p>
-</p>
-<div class="page_number">
-    Page: <%= paginate @places %>
-</div>
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <%= image_tag 'slider1.jpg' %>
+          <div clas="carousel-caption">
+          At this site you'll find resources to help you be the best version of you!
+          </div>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag 'slider2.jpg' %>
+          <div clas="carousel-caption">
+          You'll discover that real health makes changes deep within you.
+          </div>
+        </div>
+        <div class="carousel-item">
+           <%= image_tag 'slider3.jpg' %>
+          <div clas="carousel-caption">
+          You'll feel even more how we are deeply intertwined with nature.
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="icon-prev" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="icon-next" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <p>
+    </p>
+    <div class="page_number">
+        Page: <%= paginate @places %>
+    </div>
 </html>
 
 
@@ -16,7 +52,7 @@
 
         <% if place.user.present? %>
         <p> <small> Suggested by
-        <small><%= place.user.email %></small></p>
+        <%= place.user.email %></small></p>
         <% end %>
 
         <% if place.photos.present? %>
