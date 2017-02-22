@@ -25,8 +25,9 @@ body {
 
 .navbar {
     background:image_url('txture.png');
-    box-shadow: 04px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+      box-shadow: 0px 1px 3px #2a2a2a;
+    font-family: 'kalamregular';
+    opacity: 1.0;
 }
 
 .navbar-inverse .navbar-brand {
@@ -92,8 +93,28 @@ blockquote:after {
 }
 
 .photo_detail {
- 
   margin-top: 20px;
   margin-bottom: 20px;
+}
 
+.carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
+  display:block;
+  max-height: 550px;
+  margin: auto;
+  border-style: solid;
+  border-width:4p3;
+  border-color: white
+}
+
+.carousel-caption {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 25px;
+  Font-weight: 100;
+  text-shadow: rgba(0, 0, 0, 9.5) 2px 2px;
+  background-color: rgba(0, 0, 0, 0.15);
+  width: 25%;
+  margin: auto;
+}
+.carousel {
+  box-shadow: 0px 3px 8px #2a2a2a;
 }
