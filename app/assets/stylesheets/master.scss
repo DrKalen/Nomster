@@ -2,6 +2,11 @@
 @import "bootstrap";
 @import "font-awesome";
 
+.navbar-inverse .navbar-nav .nav-link {
+  color: white;
+  font-family: 'kalamregular';
+  opacity: .95;
+}
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -26,7 +31,7 @@ body {
 .navbar {
     background:image_url('txture.png');
       box-shadow: 0px 1px 3px #2a2a2a;
-    font-family: 'kalamregular';
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
     opacity: 1.0;
 }
 
@@ -41,12 +46,6 @@ body {
     margin-bottom: 0;
     margin-left: 30px;
     color: blue;
-}
-
-a.nav-item {
-    color: blue;
-    opacity: 1.0;
-    font-family: 'kalamregular';
 }
 
 .help-block {
@@ -99,21 +98,26 @@ blockquote:after {
 
 .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
   display:block;
-  max-height: 550px;
+  max-height: 400px;
   margin: auto;
   border-style: solid;
   border-width:4p3;
-  border-color: white
+  border-color: white;
+  width: 100%;
 }
 
 .carousel-caption {
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 25px;
+  font-size: 60px;
   Font-weight: 100;
   text-shadow: rgba(0, 0, 0, 9.5) 2px 2px;
-  background-color: rgba(0, 0, 0, 0.15);
-  width: 25%;
-  margin: auto;
+    background-color: rgba(0, 0, 0, 0.15);
+    width: 100%;
+    position: absolute;
+    left: 0;
+
+
+ 
 }
 .carousel {
   box-shadow: 0px 3px 8px #2a2a2a;
