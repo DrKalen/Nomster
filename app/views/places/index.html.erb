@@ -1,41 +1,29 @@
 <html>
-    <!-- <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
         <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="carousel-item active">
           <%= image_tag 'slider1.jpg', class: 'img-fluid' %>
           <div class="carousel-caption">
-          Resources to help you be at your best!
+          Come home to the beauty of nature.
           </div>
         </div>
         <div class="carousel-item">
           <%= image_tag 'slider2.jpg', class: 'img-fluid' %>
           <div class="carousel-caption">
-          Experience changes deep within you.
+          Build health from inside out.
           </div>
         </div>
-        <div class="carousel-item">
-           <%= image_tag 'slider3.jpg', class: 'img-fluid' %>
-          <div class="carousel-caption">
-          Let nature support you.
-          </div>
-        </div>
-        <div class="carousel-item">
-          <%= image_tag 'slider4.jpg', class: 'img-fluid' %>
-          <div class="carousel-caption">
-            Feel, "I'm coming Home!""
-          </div>
-        </div>
+      
         <div class="carousel-item">
            <%= image_tag 'slider5.jpg', class: 'img-fluid' %>
           <div class="carousel-caption">
-            ENJOY your life.
+            Bloom where you are.
+            </div>
         </div>
 
       </div>
@@ -76,7 +64,7 @@
         <% end %>
 
         <% if place.comments.present? %>
-         <div class="col-12">
+            <div class="col-12">
                 <blockquote>
                     <% if place.comments.last.humanized_rating.present? %>
                     <b><%= place.comments.last.humanized_rating %></b>
