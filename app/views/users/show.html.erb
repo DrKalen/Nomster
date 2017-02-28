@@ -1,6 +1,7 @@
 <div class="booyah-box">
     <div class="row">
         <div class="col-4">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <%= image_tag '1487990647_Supersushi.png' %>
         </div>
         <div class="col-8">
@@ -50,7 +51,7 @@
 
             <% if place.photos.present? %>
              <div class="col-12">
-                        <%= image_tag place.photos.first.picture %>             
+                        <%= image_tag place.photos.first.picture, class: 'small-image' %>             
                 </div>
             <% end %>
 

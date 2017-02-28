@@ -15,7 +15,7 @@
         <div class="carousel-item">
           <%= image_tag 'slider2.jpg', class: 'img-fluid' %>
           <div class="carousel-caption">
-          Build health from inside out.
+          Build health from deep inside.
           </div>
         </div>
       
@@ -59,7 +59,7 @@
 
         <% if place.photos.present? %>
          <div class="col-12">
-                    <%= image_tag place.photos.first.picture %>             
+                    <%= image_tag place.photos.first.picture, class: 'small-image' %>             
             </div>
         <% end %>
 

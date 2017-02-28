@@ -7,7 +7,7 @@
     <div>
         <% @place.photos.each do |photo| %>
             <div class="photo_detail">
-            <%= image_tag photo.picture %>
+            <%= image_tag photo.picture, class: 'small-image' %>
             <%= photo.caption %>
             </div>
         <% end %>
