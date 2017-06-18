@@ -8,6 +8,7 @@ class CommentsController < ApplicationController
     end
 
 
+
 private
 
     def comment_params
